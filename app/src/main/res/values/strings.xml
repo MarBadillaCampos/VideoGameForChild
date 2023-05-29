@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Juego de Frutas</string>
+    <string name="personaje">Personaje</string>
+    <string name="et_nombre">Como te llamas?</string>
+    <string name="btn_jugar">Jugar</string>
+
+
+    //Nivel 1
+    <string name="et_vidas">Manzanas: </string>
+    <string name="jugadorNombre">Jugardor: </string>
+    <string name="totalScore">Score: 0</string>
+    <string name="botonSumar">Comprobar</string>
+    <string name="etRespuesta">Respuesta</string>
+</resources>
