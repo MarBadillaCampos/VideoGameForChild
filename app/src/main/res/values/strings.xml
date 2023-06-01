@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Juego de Frutas</string>
     <string name="personaje">Personaje</string>
-    <string name="et_nombre">Como te llamas?</string>
+    <string name="et_nombre">¿Como te llamas?</string>
     <string name="btn_jugar">Jugar</string>
 
 
