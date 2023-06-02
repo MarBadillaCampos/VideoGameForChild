@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/wallpaperprincipal"
     android:contentDescription="@string/app_name"
-    tools:context=".MainActivity2_Nivel6">
+    tools:context=".MainActivity2_Nivel7">
 
     <ImageView
         android:id="@+id/imageView_Signo"

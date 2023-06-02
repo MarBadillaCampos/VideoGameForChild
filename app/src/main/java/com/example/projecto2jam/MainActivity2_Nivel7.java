@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity2_Nivel6 extends AppCompatActivity {
+public class MainActivity2_Nivel7 extends AppCompatActivity {
 
     TextView tv_nombre, tv_score;
     ImageView iv_Auno, iv_Ados, iv_vidas;
@@ -31,7 +31,7 @@ public class MainActivity2_Nivel6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity2_nivel2);
 
-        Toast.makeText(this, "Nivel 6 - Divisiones Enteras", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Nivel 7 - Divisiones Enteras", Toast.LENGTH_SHORT).show();
         tv_nombre = findViewById(R.id.textView_Nombre);
         tv_score = findViewById(R.id.textView_Score);
         iv_vidas = findViewById(R.id.imageView_Manzanas);
@@ -185,5 +185,3 @@ public class MainActivity2_Nivel6 extends AppCompatActivity {
     public  void onBackPressed(){
 
     }
-
-}*/
