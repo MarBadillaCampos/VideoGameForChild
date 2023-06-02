@@ -102,6 +102,7 @@ public class MainActivity2_Nivel4 extends AppCompatActivity {
                         break;
                     case 0:
                         Toast.makeText(this, "Ha perdido todas las manzanas", Toast.LENGTH_SHORT).show();
+                        baseDeDatos();
                         mp.stop();
                         mp.release();
                         Intent intent = new Intent(this,MainActivity.class);
@@ -110,7 +111,7 @@ public class MainActivity2_Nivel4 extends AppCompatActivity {
                         break;
                 }
             }
-            baseDeDatos();
+
             et_respuesta.setText("");
             numeroAleatorio();// redibujar la pantalla
         }else{
@@ -141,15 +142,15 @@ public class MainActivity2_Nivel4 extends AppCompatActivity {
                     }
                 }
             }else {
-                if( numAleatorio_Uno > numAleatorio_Dos){
-                    resultado = numAleatorio_Uno - numAleatorio_Dos;
+                resultado = numAleatorio_Uno - numAleatorio_Dos;
+                if(resultado >= 0) {
                     iv_signo.setImageResource(R.drawable.resta);
-                    for(int i = 0; i < numero.length; i++){
-                        int id = getResources().getIdentifier(numero[i],"drawable",getPackageName());
-                        if(numAleatorio_Uno == i){
+                    for (int i = 0; i < numero.length; i++) {
+                        int id = getResources().getIdentifier(numero[i], "drawable", getPackageName());
+                        if (numAleatorio_Uno == i) {
                             iv_Auno.setImageResource(id);
                         }
-                        if(numAleatorio_Dos == i){
+                        if (numAleatorio_Dos == i) {
                             iv_Ados.setImageResource(id);
                         }
                     }
@@ -157,8 +158,10 @@ public class MainActivity2_Nivel4 extends AppCompatActivity {
                     numeroAleatorio();
                 }
             }
+
+
         }else{
-            Intent intent = new Intent(this, MainActivity2_Nivel5.class);
+            Intent intent = new Intent(this, MainActivity2_Nivel4.class);
             string_score = String.valueOf(score);
             string_vidas = String.valueOf(vidas);
             intent.putExtra("jugador",nombre_jugador);
@@ -187,12 +190,11 @@ public class MainActivity2_Nivel4 extends AppCompatActivity {
 
             int bestScore = Integer.parseInt(temp_Score);
 
-            if(score > bestScore){
-                ContentValues modificacion = new ContentValues();
-                modificacion.put("nombre",nombre_jugador);
-                modificacion.put("score",score);
-                BD.update("puntaje",modificacion,"score="+bestScore,null);
-            }
+            ContentValues insertar = new ContentValues();
+            insertar.put("nombre",nombre_jugador);
+            insertar.put("score",score);
+            BD.insert("puntaje",null,insertar);
+
         }else {
             ContentValues insertar = new ContentValues();
             insertar.put("nombre",nombre_jugador);

@@ -7,6 +7,20 @@
     android:background="@drawable/globos"
     tools:context=".MainActivity" >
 
+    <Button
+        android:id="@+id/btn_highscore"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/fondoboton"
+        android:onClick="highscore"
+        android:text="High Scores"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Nombre" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/myToolbar"
         android:layout_width="match_parent"
@@ -55,7 +69,7 @@
         android:id="@+id/btn_jugar"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/fondoboton"
         android:onClick="jugar"
         android:text="@string/btn_jugar"
@@ -69,7 +83,7 @@
         android:id="@+id/tv_bestScore"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="104dp"
         android:background="@drawable/fondoet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

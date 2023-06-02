@@ -82,6 +82,7 @@ public class MainActivity2_Nivel1 extends AppCompatActivity {
                         break;
                     case 0:
                         Toast.makeText(this, "Ha perdido todas las manzanas", Toast.LENGTH_SHORT).show();
+                        baseDeDatos();
                         mp.stop();
                         mp.release();
                         Intent intent = new Intent(this,MainActivity.class);
@@ -90,7 +91,7 @@ public class MainActivity2_Nivel1 extends AppCompatActivity {
                         break;
                 }
             }
-            baseDeDatos();
+
             et_respuesta.setText("");
             numeroAleatorio();// redibujar la pantalla
         }else{
@@ -149,12 +150,11 @@ public class MainActivity2_Nivel1 extends AppCompatActivity {
 
             int bestScore = Integer.parseInt(temp_Score);
 
-            if(score > bestScore){
-                ContentValues modificacion = new ContentValues();
-                modificacion.put("nombre",nombre_jugador);
-                modificacion.put("score",score);
-                BD.update("puntaje",modificacion,"score="+bestScore,null);
-            }
+                ContentValues insertar = new ContentValues();
+                insertar.put("nombre",nombre_jugador);
+                insertar.put("score",score);
+                BD.insert("puntaje",null,insertar);
+
         }else {
             ContentValues insertar = new ContentValues();
             insertar.put("nombre",nombre_jugador);
