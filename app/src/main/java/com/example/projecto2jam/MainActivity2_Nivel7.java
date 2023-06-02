@@ -29,7 +29,7 @@ public class MainActivity2_Nivel7 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_activity2_nivel2);
+        setContentView(R.layout.activity_main_activity2_nivel7);
 
         Toast.makeText(this, "Nivel 7 - Divisiones Enteras", Toast.LENGTH_SHORT).show();
         tv_nombre = findViewById(R.id.textView_Nombre);
@@ -118,7 +118,7 @@ public class MainActivity2_Nivel7 extends AppCompatActivity {
     }
 
     private void numeroAleatorio() {
-        if (score <= 19) {
+        if (score <= 59) {
             numAleatorio_Uno = (int) (Math.random() * 9) + 1; // Generar números del 1 al 9
             numAleatorio_Dos = (int) (Math.random() * 9) + 1;
             resultado = numAleatorio_Uno / numAleatorio_Dos;
@@ -139,7 +139,7 @@ public class MainActivity2_Nivel7 extends AppCompatActivity {
                 }
             }
         } else {
-            Intent intent = new Intent(this, MainActivity2_Nivel7.class);
+            Intent intent = new Intent(this, MainActivity2_Nivel3.class);
             string_score = String.valueOf(score);
             string_vidas = String.valueOf(vidas);
             intent.putExtra("jugador", nombre_jugador);
@@ -185,3 +185,5 @@ public class MainActivity2_Nivel7 extends AppCompatActivity {
     public  void onBackPressed(){
 
     }
+
+}*/
