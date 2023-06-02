@@ -141,22 +141,24 @@ public class MainActivity2_Nivel4 extends AppCompatActivity {
                     }
                 }
             }else {
-                resultado = numAleatorio_Uno - numAleatorio_Dos;
-                iv_signo.setImageResource(R.drawable.resta);
-                for(int i = 0; i < numero.length; i++){
-                    int id = getResources().getIdentifier(numero[i],"drawable",getPackageName());
-                    if(numAleatorio_Uno == i){
-                        iv_Auno.setImageResource(id);
+                if( numAleatorio_Uno > numAleatorio_Dos){
+                    resultado = numAleatorio_Uno - numAleatorio_Dos;
+                    iv_signo.setImageResource(R.drawable.resta);
+                    for(int i = 0; i < numero.length; i++){
+                        int id = getResources().getIdentifier(numero[i],"drawable",getPackageName());
+                        if(numAleatorio_Uno == i){
+                            iv_Auno.setImageResource(id);
+                        }
+                        if(numAleatorio_Dos == i){
+                            iv_Ados.setImageResource(id);
+                        }
                     }
-                    if(numAleatorio_Dos == i){
-                        iv_Ados.setImageResource(id);
-                    }
+                }else{
+                    numeroAleatorio();
                 }
             }
-
-
         }else{
-            Intent intent = new Intent(this, MainActivity2_Nivel4.class);
+            Intent intent = new Intent(this, MainActivity2_Nivel5.class);
             string_score = String.valueOf(score);
             string_vidas = String.valueOf(vidas);
             intent.putExtra("jugador",nombre_jugador);
