@@ -117,7 +117,7 @@ public class MainActivity2_Nivel7 extends AppCompatActivity {
     }
 
     private void numeroAleatorio() {
-        if (score <= 59) {
+        if (score <= 69) {
             numAleatorio_Uno = (int) (Math.random() * 9) + 1; // Generar números del 1 al 9
             numAleatorio_Dos = (int) (Math.random() * 9) + 1;
             resultado = numAleatorio_Uno / numAleatorio_Dos;

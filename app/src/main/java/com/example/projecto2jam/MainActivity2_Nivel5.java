@@ -117,12 +117,12 @@ public class MainActivity2_Nivel5 extends AppCompatActivity {
 
     }
     private void numeroAleatorio() {
-        if(score <= 19){
+        if(score <= 49){
             numAleatorio_Uno = (int) (Math.random() * 10);
             numAleatorio_Dos = (int) (Math.random() * 10);
             resultado = numAleatorio_Uno * numAleatorio_Dos;
 
-            if(resultado >= 0){
+            if(resultado <= 10){
 
                 for(int i = 0; i < numero.length; i++){
                     int id = getResources().getIdentifier(numero[i],"drawable",getPackageName());

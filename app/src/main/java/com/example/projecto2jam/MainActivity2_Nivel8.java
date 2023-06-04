@@ -120,7 +120,7 @@ public class MainActivity2_Nivel8 extends AppCompatActivity {
     }
 
     private void numeroAleatorio() {
-        if (score <= 69) {
+        if (score <= 79) {
             Random random = new Random();
             operacion = random.nextInt(4); // Generar número aleatorio de 0 a 3
 
