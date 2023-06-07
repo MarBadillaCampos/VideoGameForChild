@@ -168,7 +168,7 @@ public class MainActivity2_Nivel8 extends AppCompatActivity {
             }
 
         } else {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, credits.class);
             string_score = String.valueOf(score);
             string_vidas = String.valueOf(vidas);
             intent.putExtra("jugador", nombre_jugador);
