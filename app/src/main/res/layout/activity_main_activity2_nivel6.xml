@@ -60,7 +60,9 @@
         android:ems="10"
         android:hint="@string/etRespuesta"
         android:inputType="number"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimary_dark"
+        android:textColorHint="@color/colorPrimary_dark"
+        android:fontFamily="@font/juniory"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_NumeroUno" />
 
@@ -71,6 +73,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
         android:text="@string/jugadorNombre"
+        android:textColor="@color/colorPrimary_dark"
+        android:fontFamily="@font/comic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,6 +87,8 @@
         android:background="@drawable/fondoboton"
         android:onClick="comparar"
         android:text="@string/botonSumar"
+        android:fontFamily="@font/juniory"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_NumeroDos" />
 
@@ -93,6 +99,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="@string/et_vidas"
+        android:textColor="@color/colorPrimary_dark"
+        android:fontFamily="@font/comic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Score" />
 
@@ -103,6 +111,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:text="@string/totalScore"
+        android:textColor="@color/colorPrimary_dark"
+        android:fontFamily="@font/comic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Nombre" />
 

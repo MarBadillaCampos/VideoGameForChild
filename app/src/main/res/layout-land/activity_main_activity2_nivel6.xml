@@ -7,35 +7,24 @@
     tools:context=".MainActivity2_Nivel5">
 
     <ImageView
-        android:id="@+id/imageView_NumeroUno"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="108dp"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintStart_toEndOf="@+id/imageView_Manzanas"
-        app:layout_constraintTop_toBottomOf="@+id/myToolbar_Nivel1"
-        app:srcCompat="@drawable/cero" />
-
-    <ImageView
         android:id="@+id/imageView_Signo"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="108dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintStart_toEndOf="@+id/imageView_NumeroUno"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/multiplicacion" />
 
     <ImageView
-        android:id="@+id/imageView_NumeroDos"
+        android:id="@+id/imageView_NumeroUno"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="108dp"
         android:contentDescription="@string/app_name"
-        app:layout_constraintStart_toEndOf="@+id/imageView_Signo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cero" />
 
@@ -50,16 +39,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tresvidas" />
 
+    <ImageView
+        android:id="@+id/imageView_NumeroDos"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Signo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cero" />
+
     <EditText
         android:id="@+id/et_Resultado"
         android:layout_width="140dp"
         android:layout_height="48dp"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="92dp"
         android:ems="10"
         android:hint="@string/etRespuesta"
         android:inputType="number"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimary_dark"
+        android:textColorHint="@color/colorPrimary_dark"
+        android:fontFamily="@font/juniory"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_NumeroUno" />
 
@@ -70,6 +72,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
         android:text="@string/jugadorNombre"
+        android:textColor="@color/colorPrimary_dark"
+        android:fontFamily="@font/comic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,11 +81,13 @@
         android:id="@+id/button2"
         android:layout_width="140dp"
         android:layout_height="48dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="152dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="176dp"
         android:background="@drawable/fondoboton"
         android:onClick="comparar"
         android:text="@string/botonSumar"
+        android:fontFamily="@font/juniory"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_NumeroDos" />
 
@@ -92,6 +98,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="@string/et_vidas"
+        android:textColor="@color/colorPrimary_dark"
+        android:fontFamily="@font/comic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Score" />
 
@@ -102,6 +110,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:text="@string/totalScore"
+        android:textColor="@color/colorPrimary_dark"
+        android:fontFamily="@font/comic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Nombre" />
 

@@ -16,6 +16,8 @@
         android:onClick="backToMenu"
         android:text="Menu Principal"
         android:textSize="24dp"
+        android:fontFamily="@font/juniory"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,15 +32,16 @@
         android:background="#B9673AB7"
         android:text="HighScore"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:fontFamily="@font/juniory"
+        android:textColor="@color/white"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/myScrollView"
-        android:layout_width="361dp"
-        android:layout_height="395dp"
+        android:layout_width="367dp"
+        android:layout_height="269dp"
         android:background="#95673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
